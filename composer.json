@@ -1,0 +1,32 @@
+{
+    "name": "concuria/responsive-images",
+    "description": "Responsive images extension",
+    "type": "bolt-extension",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Daniel Leech",
+            "email": "daniel@dantleech.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Concuria\\Bolt\\Extension\\ResponsiveImage\\": "src/"
+        }
+    },
+    "require": {
+        "bolt/bolt": "^3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.0"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Concuria\\Bolt\\Extension\\ContentType\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "bolt-assets": "web",
+        "bolt-class": "DTL\\Bolt\\Extension\\ContentType\\ConcuriaResponsiveImageExtension"
+    }
+}

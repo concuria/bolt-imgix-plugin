@@ -1,0 +1,9 @@
+# ignore the automatically generated bolt stuff
+/app/
+/app/database/
+/extensions/
+/public/
+/theme/
+
+composer.lock
+/vendor/
