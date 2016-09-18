@@ -1,5 +1,7 @@
 # ignore the automatically generated bolt stuff
-/app/
+/app/cache
+/app/database/
+/app/public/
 /app/database/
 /extensions/
 /public/

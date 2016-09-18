@@ -1,0 +1,43 @@
+pages:
+    name: Pages
+    singular_name: Page
+    fields:
+        title:
+            type: text
+            class: large
+            group: content
+        slug:
+            type: slug
+            uses: title
+        body:
+            type: html
+            height: 300px
+        template:
+            type: templateselect
+            filter: '*.twig'
+    relations:
+        locations:
+            multiple: false
+        people:
+            multiple: true
+    taxonomy: [ groups ]
+    recordsperpage: 100
+
+locations:
+    name: Locations
+    singular_name: Location
+    fields:
+        title:
+            type: text
+            class: large
+            group: content
+        slug:
+            type: slug
+            uses: title
+
+people:
+    name: People
+    singular_name: Person
+    fields:
+        name: 
+            type: text

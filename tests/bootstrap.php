@@ -6,4 +6,3 @@ define('EXTENSION_TEST_ROOT', dirname(__DIR__));
 define('EXTENSION_AUTOLOAD',  realpath(dirname(__DIR__) . '/vendor/autoload.php'));
 
 require_once EXTENSION_AUTOLOAD;
-
